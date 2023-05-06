@@ -6,21 +6,46 @@
 
 @layer base {
 
-    * {
-      outline: none;
-    }
-    
-    html {
-      font-family: 'Roboto', sans-serif;
-    }
-
-    body {
-        background-color: #0F0F0F;
-        overflow-y: scroll;
-    }
-
-    .router-link .active {
-        color: #ffffff !important;
-    }
-    
+  * {
+    outline: none;
   }
+
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+    background-color: #0F0F0F;
+    overflow-y: scroll;
+  }
+
+  .router-link .active {
+    color: #ffffff !important;
+  }
+
+  .shadow-box-soft::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    border-radius: 30px;
+  }
+
+  .shadow-box::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    border-radius: 30px;
+    opacity: 0.25;
+  }
+}

@@ -16,7 +16,7 @@ function App() {
           <li class='mx-6 router-link text-md text-grey'><A href='/works'>Works</A></li>
           <li class='mx-6 router-link text-md text-grey'><A href='/contact'>Contact</A></li>
         </ul>
-        <a class='bg-dark hover:bg-white hover:text-dark text-white inline-block transition-[0.3s] rounded-[16px] font-medium text-[16px] py-[12px] px-[30px]'>
+        <a class='bg-dark shadow-box relative cursor-pointer hover:bg-white hover:text-dark text-white inline-block transition-[0.3s] rounded-[16px] font-medium text-[16px] py-[12px] px-[30px]'>
           Let's talk
         </a>
       </div>
@@ -27,6 +27,9 @@ function App() {
       <Route path='/works' component={Work}></Route>
       <Route path='/contact' component={Contact}></Route>
     </Routes>
+    <footer class='py-5 mt-16'>
+       <p class='text-grey text-center'>Made with love by <span class='text-sky-blue'>Solid.js</span></p>
+    </footer>
   </>
 }
 
