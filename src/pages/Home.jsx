@@ -40,9 +40,7 @@ const Home = () => {
             </div>
             <div class='rounded-[30px] shadow-box relative cursor-pointer p-3'>
               <div class='p-5'>
-                <div class='text-center flex justify-center'>
-                  <LazyImage src={mywork} />
-                </div>
+                <LazyImage src={mywork} />
                 <div class='flex justify-between items-center mt-5'>
                   <div>
                     <p class='text-grey fond-bold text-sm'>SHOW CASE</p>
@@ -106,7 +104,12 @@ const Home = () => {
             <p>PROJECTS</p>
           </div>
         </div>
-        <div class='grid gird-cols-3 gap-5 rounded-[30px] shadow-box relative cursor-pointer p-3'></div>
+        <div class='flex flex-col justify-end rounded-[30px] shadow-box relative cursor-pointer p-8'>
+            <p class='text-5xl text-white'>
+              Let's <br></br>
+              work <span class='text-sky-blue'>together</span>
+            </p>
+        </div>
       </div>
     </Container>
   )

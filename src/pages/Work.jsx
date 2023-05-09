@@ -3,6 +3,8 @@ import Container from '../components/common/Container'
 import dockerLaravel from '../assets/projects/docker-laravel.webp'
 import nextRealTime from '../assets/projects/real-time-nextjs.webp'
 import bookShop from '../assets/projects/node-book-shop.png'
+import vueTodo from '../assets/projects/vue.png'
+import solid from '../assets/projects/solid.png'
 
 const Work = () => {
   return (
@@ -10,30 +12,15 @@ const Work = () => {
       <h2 class='text-white text-5xl font-bold text-center mb-5 mt-16'>All PROJECTS</h2>
       <div class='grid grid-cols-3 gap-5'>
         <ProjeCard
-          src={bookShop}
-          title={'Framework'}
+          src={vueTodo}
+          title={'Frameworks'}
           about={'Vue.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
+          href={'https://github.com/WaiYanLin71/vue-todo'} />
         <ProjeCard
-          src={bookShop}
+          src={solid}
           title={'Framework'}
-          about={'Vue.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
-        <ProjeCard
-          src={bookShop}
-          title={'Framework'}
-          about={'Vue.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
-        <ProjeCard
-          src={bookShop}
-          title={'Framework'}
-          about={'Vue.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
-        <ProjeCard
-          src={bookShop}
-          title={'Framework'}
-          about={'Vue.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
+          about={'Solid.js Todo'}
+          href={'https://github.com/WaiYanLin71/solid-js-todo'} />
         <ProjeCard
           src={bookShop}
           title={'Framework'}
@@ -55,16 +42,6 @@ const Work = () => {
           src={bookShop}
           title={'Backend, Frontend'}
           about={'Next.js Real Time Chat App'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
-        <ProjeCard
-          src={bookShop}
-          title={'Framework'}
-          about={'Solid.js Todo'}
-          href="https://github.com/MimosaMimosa/nextjs_chat_app" />
-        <ProjeCard
-          src={bookShop}
-          title={'Framework'}
-          about={'Vue.js Todo'}
           href="https://github.com/MimosaMimosa/nextjs_chat_app" />
       </div>
     </Container>
